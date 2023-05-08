@@ -270,15 +270,79 @@ li{
     cursor: pointer;
 }
 .main1-left-lun{
-    background-color: pink;
+    position: relative;
+    overflow: hidden;
     width: 350px;
     height: 230px;
     margin-top: 20px;
 }
-.main1-left-lun img{
+.main1-left-lun .images {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+}
+
+.main1-left-lun .img{
     width: 100%;
     height: 100%;
+    background-size: cover;
 }
+
+.main1-left-lun .min-images {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 10px;
+    width: 30%;
+    z-index: 999;
+    right: 10%;
+}
+.main1-left-lun .img:nth-child(1){
+    background-image: url("image/xiaolun1.jpg");
+}
+.main1-left-lun .img:nth-child(2){
+    background-image: url("image/xiaolun2.jpg");
+}
+.main1-left-lun .img:nth-child(3){
+    background-image: url("image/xiaolun3.jpg");
+}
+.main1-left-lun .min{
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.7);
+
+
+}
+.main1-left-lun .button-left{
+    width:40px;
+    height: 70px;
+    position:absolute;
+    left: 0;
+    top:50%;
+    margin-top: -35px;
+    font-size: 50px;
+    cursor: pointer;
+    line-height: 70px;
+    background: rgba(0,0,0,0.3);
+
+}
+.main1-left-lun .button-right{
+    width:40px;
+    height: 70px;
+    position:absolute;
+    right: 0;
+    top:50%;
+    margin-top: -35px;
+    font-size: 50px;
+    cursor: pointer;
+    line-height: 70px;
+    background: rgba(0,0,0,0.3);
+}
+
 .main1-left-lun span{
     display: block;
     color: #105fa5;
